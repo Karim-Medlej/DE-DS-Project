@@ -3,15 +3,12 @@ import pandas as pd
 import sklearn
 import pickle
 import xgboost
-from PIL import Image
-
-img=Image.open(r"C:\Users\karim\OneDrive\Escritorio\Visual Studio Code\Sports Betting archives\Streamlit Images\atp-logo.png")
-st.image(img)
 
 st.write("""
 #Project Sporting Bets - The App!
+         
 This is our streamlit app for the Datascientest project.
-Below you can fill in the parameters to see on who to bet! :)
+Below you can fill in the parameters to see on who to bet on! :)
 """)
 
 streamlit_model = pickle.load(open('streamlit_xgb.pkl', 'rb'))
@@ -49,6 +46,26 @@ if __name__ == '__main__':
         player2 = st.selectbox('Player 2', options=['-Select-']+list(playerlist[player1]))
         if player2 != '-Select-':
             tournament = st.selectbox('Tournament',('-Select-','Wimbledon','Australian Open','French Open','US Open'))
+
+######################
+if tournament != '-Select-':
+    # Create a data frame with the features your model expects
+    data = pd.DataFrame({
+        'player1': [player1],
+        'player2': [player2],
+        'tournament': [tournament]
+    })
+
+    # Preprocess your data as needed, for example:
+    # data = preprocess(data)
+
+    # Get the prediction
+    prediction = streamlit_model.predict(data)
+
+    # Display the prediction
+    st.write(f'The predicted winner is: {prediction[0]}')
+
+
 
 # with col2:
 #     text_input = st.text_input(
