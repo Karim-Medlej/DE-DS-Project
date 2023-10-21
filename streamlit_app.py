@@ -48,6 +48,19 @@ if __name__ == '__main__':
             tournament = st.selectbox('Tournament',('-Select-','Wimbledon','Australian Open','French Open','US Open'))
 
 ######################
+from sklearn.preprocessing import LabelEncoder
+
+# Initialize LabelEncoder
+le = LabelEncoder()
+
+# Transform the categorical columns
+data['player1'] = le.fit_transform(data['player1'])
+data['player2'] = le.fit_transform(data['player2'])
+data['tournament'] = le.fit_transform(data['tournament'])
+
+# Now you can predict
+prediction = streamlit_model.predict(data)
+
 if tournament != '-Select-':
     # Create a data frame with the features your model expects
     data = pd.DataFrame({
