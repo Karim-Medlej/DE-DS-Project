@@ -5,7 +5,7 @@ import pickle
 import xgboost
 from PIL import Image
 
-img=Image.open('C:\Users\karim\OneDrive\Escritorio\Visual Studio Code\Sports Betting archives\Streamlit Images\atp_tour_logo.jpg')
+img=Image.open(r'C:\Users\karim\OneDrive\Escritorio\Visual Studio Code\Sports Betting archives\Streamlit Images\atp_tour_logo.jpg')
 st.image(img)
 
 st.write("""
