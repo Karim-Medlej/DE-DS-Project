@@ -49,31 +49,7 @@ if __name__ == '__main__':
         if player2 != '-Select-':
             tournament = st.selectbox('Tournament',('-Select-','Wimbledon','Australian Open','French Open','US Open'))
 
-######################
-# Transform the categorical columns
-data['player1'] = le.fit_transform(data['player1'])
-data['player2'] = le.fit_transform(data['player2'])
-data['tournament'] = le.fit_transform(data['tournament'])
-
-# Now you can predict
-prediction = streamlit_model.predict(data)
-
-if tournament != '-Select-':
-    # Create a data frame with the features your model expects
-    data = pd.DataFrame({
-        'player1': [player1],
-        'player2': [player2],
-        'tournament': [tournament]
-    })
-
-    # Preprocess your data as needed, for example:
-    # data = preprocess(data)
-
-    # Get the prediction
-    prediction = streamlit_model.predict(data)
-
-    # Display the prediction
-    st.write(f'The predicted winner is: {prediction[0]}')
+    st.write(f'The predicted winner is:'streamlit_model(__name__))
 
 
 
