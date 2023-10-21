@@ -49,7 +49,7 @@ if __name__ == '__main__':
         if player2 != '-Select-':
             tournament = st.selectbox('Tournament',('-Select-','Wimbledon','Australian Open','French Open','US Open'))
 
-    st.write('The predicted winner is:' + streamlit_model(__name__))
+    st.write('The predicted winner is:' + str(streamlit_model(__name__)))
 
 
 
