@@ -3,6 +3,8 @@ import pandas as pd
 import sklearn
 import pickle
 import xgboost
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
 
 st.write("""
 #Project Sporting Bets - The App!
@@ -48,11 +50,6 @@ if __name__ == '__main__':
             tournament = st.selectbox('Tournament',('-Select-','Wimbledon','Australian Open','French Open','US Open'))
 
 ######################
-from sklearn.preprocessing import LabelEncoder
-
-# Initialize LabelEncoder
-le = LabelEncoder()
-
 # Transform the categorical columns
 data['player1'] = le.fit_transform(data['player1'])
 data['player2'] = le.fit_transform(data['player2'])
