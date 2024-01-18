@@ -1,2 +1,2 @@
 # Tennis-Sports-Betting
-My project focused on ATP data. I analyzed and visualized the data to discover how different factors affected the results. Then, I created a machine learning model that can forecast the winner of a match based on two player names and some other inputs.
+The goal of this project is to develop a machine learning model that can predict the outcome of a tennis match based on the names of the two players and some other features. The project uses ATP data from 2018, which contains information about the matches played in that year. The data was explored and visualized to understand how different variables influenced the results. The project was implemented using Python, Sklearn and Streamlit libraries.
