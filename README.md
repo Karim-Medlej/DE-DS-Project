@@ -5,4 +5,4 @@ The goal of this project is to develop a machine learning model that can predict
 
 ⚠️ This project is documented in a report PDF that contains all the relevant information. You are welcome to review it at your convenience!
 
-🛠️ Python(sklearn) and streamlit we used on this project.
+🛠️ Python(sklearn) and streamlit we used in this project.
