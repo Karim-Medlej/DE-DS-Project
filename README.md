@@ -47,6 +47,6 @@ XGB Classifier - 0.6929% precisión.<br>
 
 Como podemos ver, el XGBClassifier superó a los otros dos modelos, logrando un puntuación de precisión de 0,693. Esto significa que se clasifica correctamente alrededor del 69,3% . Por lo tanto, la conclusión es que el modelo XGBClassifier es el modelo más adecuado para nuestro problema.
 
-⚠️ Este proyecto está documentado en un informe PDF en mi repositorio GitHub que contiene toda la información relevante.
+⚠️ Este proyecto está documentado en un informe PDF que contiene toda la información relevante.
 
 🛠️ Python(sklearn, gridsearch, pickle) y streamlit se utilizaron en este proyecto.
