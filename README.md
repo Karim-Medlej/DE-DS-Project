@@ -23,7 +23,7 @@ As we can see, the XGBClassifier outperformed the other two models, achieving an
 
 ⚠️ This project is documented in a report PDF that contains all the relevant information. You are welcome to review it at your convenience!
 
-🛠️ Python(sklearn) and streamlit were used in this project.
+🛠️ Python(Matplotlib, seaborn, pandas, numpy, sklearn, gridsearch, pickle) and streamlit were used in this project.
 
 
 <h1 align="center">
@@ -49,4 +49,4 @@ Como podemos ver, el XGBClassifier superó a los otros dos modelos, logrando un 
 
 ⚠️ Este proyecto está documentado en un informe PDF que contiene toda la información relevante.
 
-🛠️ Python(sklearn, gridsearch, pickle) y streamlit se utilizaron en este proyecto.
+🛠️ Python(Matplotlib, seaborn, pandas, numpy, sklearn, gridsearch, pickle) y streamlit se utilizaron en este proyecto.
